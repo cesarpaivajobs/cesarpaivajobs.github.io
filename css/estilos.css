@@ -2,14 +2,25 @@
 from{
     color: transparent;
     margin-left: -2200px;
-    margin-bottom: 100px;
+    margin-bottom: 0px;
     
 }
 to{
     margin-left: 0px;
-    color: black; 
+    color: #505050; 
     margin-bottom: 50px;
 }
+}
+
+@keyframes maoanimation{
+    
+    from{ 
+        margin-top: 15px;
+    }
+    to{
+        margin-top: 0px;
+    }
+
 }
 
 #cp-animation{
@@ -17,4 +28,24 @@ position: relative;
 animation-name: cpanimation;
 animation-duration: 5s;
 animation-direction: alternate;
+}
+
+.mao {
+    max-width:200px;
+    max-height: 200px;
+
+    width: auto;
+    height: auto;
+    opacity: 1;
+}
+
+#divmao{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    display: none;
+    animation-name: maoanimation;
+    animation-duration: 500ms;
+    animation-direction: alternate;
+    animation-iteration-count: 9;
 }
