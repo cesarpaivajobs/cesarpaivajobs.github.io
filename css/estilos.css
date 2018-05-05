@@ -1,0 +1,20 @@
+@keyframes cpanimation{
+from{
+    color: transparent;
+    margin-left: -2200px;
+    margin-bottom: 100px;
+    
+}
+to{
+    margin-left: 0px;
+    color: black; 
+    margin-bottom: 50px;
+}
+}
+
+#cp-animation{
+position: relative;
+animation-name: cpanimation;
+animation-duration: 5s;
+animation-direction: alternate;
+}
